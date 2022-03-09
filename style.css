@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+
+#canvas {
+    background-color: gray;
+    height: 70vh;
+    width: 35vw;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
