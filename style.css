@@ -7,13 +7,14 @@ body {
     font-family: 'Staatliches', cursive;
     margin: 0;
     padding: 0;
+    background-color: #D3E1EF;
 }
 
 
 #canvas {
-    background-color: gray;
-    height: 70vh;
-    width: 35vw;
+    background-color: #370077;
+    height: 600px;
+    width: 600px;
     border-radius: 10px;
     justify-self: center;
 }

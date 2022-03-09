@@ -8,7 +8,7 @@ const player = {
     y: canvas.height / 2,
     h: 40,
     w: 60,
-    speed: 5,
+    speed: 3,
     dx: 0,
     dy: 0
 }
@@ -32,6 +32,7 @@ function update(params) {
     clear()
     draw()
     newPos()
+    detectWall()
     requestAnimationFrame(update)
 }
 
@@ -71,6 +72,29 @@ function zero() {
     player.dy = 0
 }
 
+function detectWall() {
+    // down wall
+    if (player.h + player.y > canvas.height) {
+        player.y = canvas.height - player.h
+    }
+
+    // left wa;;
+    if (player.x < 0) {
+        player.x = 0
+    }
+
+    // right wall
+    if (player.w + player.x > canvas.width) {
+        player.x = canvas.width - player.w
+    }
+
+    // top wall
+    if (player.y < 0) {
+        player.y = 0
+    }
+
+
+}
 
 // calls
 update()
